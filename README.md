@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.svg" width="100" alt="project-logo">
+  <img src="logo-with-bg.png" width="100" alt="project-logo" style="border-radius: 25%;">
 </p>
 <p align="center">
     <h1 align="center">CSV-SEEDER</h1>
