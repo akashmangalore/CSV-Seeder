@@ -1,0 +1,1128 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "inspect",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "inspect",
+        "description": "inspect",
+        "detail": "inspect",
+        "documentation": {}
+    },
+    {
+        "label": "gradio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gradio",
+        "description": "gradio",
+        "detail": "gradio",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "mimesis",
+        "description": "mimesis",
+        "isExtraImport": true,
+        "detail": "mimesis",
+        "documentation": {}
+    },
+    {
+        "label": "snake_case",
+        "importPath": "pydash",
+        "description": "pydash",
+        "isExtraImport": true,
+        "detail": "pydash",
+        "documentation": {}
+    },
+    {
+        "label": "snake_case",
+        "importPath": "pydash",
+        "description": "pydash",
+        "isExtraImport": true,
+        "detail": "pydash",
+        "documentation": {}
+    },
+    {
+        "label": "snake_case",
+        "importPath": "pydash",
+        "description": "pydash",
+        "isExtraImport": true,
+        "detail": "pydash",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "types",
+        "description": "types",
+        "detail": "types",
+        "documentation": {}
+    },
+    {
+        "label": "parameters",
+        "importPath": "symbol",
+        "description": "symbol",
+        "isExtraImport": true,
+        "detail": "symbol",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"csv-seeder-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"csv-seeder-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"csv-seeder-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"csv-seeder-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"csv-seeder-py3.12\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.12/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "generic",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "generic = Generic()\ndefault_method_name = \"word\"\n# person = Person()\n# address = Address()\n# text = Text()\n# List of Mimesis providers to introspect\n# providers = [generic, person, address, text]\nprovider_class_list = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "default_method_name",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "default_method_name = \"word\"\n# person = Person()\n# address = Address()\n# text = Text()\n# List of Mimesis providers to introspect\n# providers = [generic, person, address, text]\nprovider_class_list = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider\n\tfor provider_class in provider_class_list",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "provider_class_list",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "provider_class_list = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider\n\tfor provider_class in provider_class_list\n\tfor provider_name, provider in inspect.getmembers(provider_class)\n}\nmethod_name_method_dict = {\n\tmethod_name: method\n\tfor provider in provider_name_provider_dict.values()\n\tfor method_name, method in inspect.getmembers(provider, predicate=inspect.ismethod)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "provider_name_provider_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "provider_name_provider_dict = {\n\tprovider_name: provider\n\tfor provider_class in provider_class_list\n\tfor provider_name, provider in inspect.getmembers(provider_class)\n}\nmethod_name_method_dict = {\n\tmethod_name: method\n\tfor provider in provider_name_provider_dict.values()\n\tfor method_name, method in inspect.getmembers(provider, predicate=inspect.ismethod)\n\tif not method_name.startswith(\"_\")",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "method_name_method_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "method_name_method_dict = {\n\tmethod_name: method\n\tfor provider in provider_name_provider_dict.values()\n\tfor method_name, method in inspect.getmembers(provider, predicate=inspect.ismethod)\n\tif not method_name.startswith(\"_\")\n}\nmethod_name_list = list(method_name_method_dict.keys())\nwith gr.Blocks() as demo:\n\tfile_input = gr.File(label=\"Upload CSV File\")\n\tupload_btn = gr.Button(\"Upload\")",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "method_name_list",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "method_name_list = list(method_name_method_dict.keys())\nwith gr.Blocks() as demo:\n\tfile_input = gr.File(label=\"Upload CSV File\")\n\tupload_btn = gr.Button(\"Upload\")\n\t@gr.render(inputs=file_input, triggers=[upload_btn.click])\n\tdef process_csv_upload(file):\n\t\tgr.Label(value=\"Select type of each Headers\")\n\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\tfile_input",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\tfile_input = gr.File(label=\"Upload CSV File\")\n\tupload_btn = gr.Button(\"Upload\")\n\t@gr.render(inputs=file_input, triggers=[upload_btn.click])\n\tdef process_csv_upload(file):\n\t\tgr.Label(value=\"Select type of each Headers\")\n\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\tupload_btn",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\tupload_btn = gr.Button(\"Upload\")\n\t@gr.render(inputs=file_input, triggers=[upload_btn.click])\n\tdef process_csv_upload(file):\n\t\tgr.Label(value=\"Select type of each Headers\")\n\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdf",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tfilename",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\theaders",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\toptions",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tmeta",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdropdowns",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tlower_header",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,\n\t\t\t\t\telem_id=f\"{lower_header}\",\n\t\t\t\t)\n\t\t\t\tdropdowns.append(dropdown)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tvalue",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,\n\t\t\t\t\telem_id=f\"{lower_header}\",\n\t\t\t\t)\n\t\t\t\tdropdowns.append(dropdown)\n\t\tno_of_records = gr.Number(label=\"No. of records to Generate\", value=1)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tdropdown",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,\n\t\t\t\t\telem_id=f\"{lower_header}\",\n\t\t\t\t)\n\t\t\t\tdropdowns.append(dropdown)\n\t\tno_of_records = gr.Number(label=\"No. of records to Generate\", value=1)\n\t\tgenerate_records_btn = gr.Button(\"Generate Records\")",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tno_of_records",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tno_of_records = gr.Number(label=\"No. of records to Generate\", value=1)\n\t\tgenerate_records_btn = gr.Button(\"Generate Records\")\n\t\tmeta.value = {\n\t\t\t\"headers\": headers,\n\t\t\t\"filename\": filename,\n\t\t}\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, no_of_records, meta],\n\t\t\toutputs=gr.File(label=\"Download CSV\"),\n\t\t)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tgenerate_records_btn",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tgenerate_records_btn = gr.Button(\"Generate Records\")\n\t\tmeta.value = {\n\t\t\t\"headers\": headers,\n\t\t\t\"filename\": filename,\n\t\t}\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, no_of_records, meta],\n\t\t\toutputs=gr.File(label=\"Download CSV\"),\n\t\t)\n\t\tdef generate_csv(*data):",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tmeta.value",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\tmeta.value = {\n\t\t\t\"headers\": headers,\n\t\t\t\"filename\": filename,\n\t\t}\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, no_of_records, meta],\n\t\t\toutputs=gr.File(label=\"Download CSV\"),\n\t\t)\n\t\tdef generate_csv(*data):\n\t\t\tmethod_name_list = data[:-2]",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tmethod_name_list",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\tmethod_name_list = data[:-2]\n\t\t\tno_of_records = data[-2]\n\t\t\tmeta = data[-1]\n\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tno_of_records",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\tno_of_records = data[-2]\n\t\t\tmeta = data[-1]\n\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tmeta",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\tmeta = data[-1]\n\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\theaders",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tfilename",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\trecords",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\trecord",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tmethod",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\trecord[headers[index]]",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tdf",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcsv_file",
+        "kind": 5,
+        "importPath": "csv_seeder.main",
+        "description": "csv_seeder.main",
+        "peekOfCode": "\t\t\tcsv_file = f\"temp/{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.main",
+        "documentation": {}
+    },
+    {
+        "label": "generic",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "generic = Generic()\ndefault_method_name = \"word\"\n# person = Person()\n# address = Address()\n# text = Text()\n# List of Mimesis providers to introspect\n# providers = [generic, person, address, text]\nprovider_class_list = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "default_method_name",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "default_method_name = \"word\"\n# person = Person()\n# address = Address()\n# text = Text()\n# List of Mimesis providers to introspect\n# providers = [generic, person, address, text]\nprovider_class_list = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider\n\tfor provider_class in provider_class_list",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "provider_class_list",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "provider_class_list = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider\n\tfor provider_class in provider_class_list\n\tfor provider_name, provider in inspect.getmembers(provider_class)\n}\nmethod_name_method_dict = {\n\tmethod_name: method\n\tfor provider in provider_name_provider_dict.values()\n\tfor method_name, method in inspect.getmembers(provider, predicate=inspect.ismethod)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "provider_name_provider_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "provider_name_provider_dict = {\n\tprovider_name: provider\n\tfor provider_class in provider_class_list\n\tfor provider_name, provider in inspect.getmembers(provider_class)\n}\nmethod_name_method_dict = {\n\tmethod_name: method\n\tfor provider in provider_name_provider_dict.values()\n\tfor method_name, method in inspect.getmembers(provider, predicate=inspect.ismethod)\n\tif not method_name.startswith(\"_\")",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "method_name_method_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "method_name_method_dict = {\n\tmethod_name: method\n\tfor provider in provider_name_provider_dict.values()\n\tfor method_name, method in inspect.getmembers(provider, predicate=inspect.ismethod)\n\tif not method_name.startswith(\"_\")\n}\nmethod_name_list = list(method_name_method_dict.keys())\nwith gr.Blocks() as demo:\n\tfile_input = gr.File(label=\"Upload CSV File\")\n\tupload_btn = gr.Button(\"Upload\")",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "method_name_list",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "method_name_list = list(method_name_method_dict.keys())\nwith gr.Blocks() as demo:\n\tfile_input = gr.File(label=\"Upload CSV File\")\n\tupload_btn = gr.Button(\"Upload\")\n\t@gr.render(inputs=file_input, triggers=[upload_btn.click])\n\tdef process_csv_upload(file):\n\t\tgr.Label(value=\"Select type of each Headers\")\n\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\tfile_input",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\tfile_input = gr.File(label=\"Upload CSV File\")\n\tupload_btn = gr.Button(\"Upload\")\n\t@gr.render(inputs=file_input, triggers=[upload_btn.click])\n\tdef process_csv_upload(file):\n\t\tgr.Label(value=\"Select type of each Headers\")\n\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\tupload_btn",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\tupload_btn = gr.Button(\"Upload\")\n\t@gr.render(inputs=file_input, triggers=[upload_btn.click])\n\tdef process_csv_upload(file):\n\t\tgr.Label(value=\"Select type of each Headers\")\n\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdf",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tdf = pd.read_csv(file.name)\n\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tfilename",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tfilename = os.path.basename(file.name)\n\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\theaders",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\theaders = list(df.columns)\n\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\toptions",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\toptions = method_name_list\n\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tmeta",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tmeta = gr.State({})\n\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdropdowns",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tdropdowns = []\n\t\twith gr.Row() as row:\n\t\t\tfor header in headers:\n\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tlower_header",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\t\tlower_header = snake_case(header)\n\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,\n\t\t\t\t\telem_id=f\"{lower_header}\",\n\t\t\t\t)\n\t\t\t\tdropdowns.append(dropdown)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tvalue",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\t\tvalue = lower_header if lower_header in options else default_method_name\n\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,\n\t\t\t\t\telem_id=f\"{lower_header}\",\n\t\t\t\t)\n\t\t\t\tdropdowns.append(dropdown)\n\t\tno_of_records = gr.Number(label=\"No. of records to Generate\", value=1)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tdropdown",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\t\tdropdown = gr.Dropdown(\n\t\t\t\t\tchoices=options,\n\t\t\t\t\tvalue=value,\n\t\t\t\t\tlabel=f\"{header}\",\n\t\t\t\t\tinteractive=True,\n\t\t\t\t\telem_id=f\"{lower_header}\",\n\t\t\t\t)\n\t\t\t\tdropdowns.append(dropdown)\n\t\tno_of_records = gr.Number(label=\"No. of records to Generate\", value=1)\n\t\tgenerate_records_btn = gr.Button(\"Generate Records\")",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tno_of_records",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tno_of_records = gr.Number(label=\"No. of records to Generate\", value=1)\n\t\tgenerate_records_btn = gr.Button(\"Generate Records\")\n\t\tmeta.value = {\n\t\t\t\"headers\": headers,\n\t\t\t\"filename\": filename,\n\t\t}\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, no_of_records, meta],\n\t\t\toutputs=gr.File(label=\"Download CSV\"),\n\t\t)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tgenerate_records_btn",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tgenerate_records_btn = gr.Button(\"Generate Records\")\n\t\tmeta.value = {\n\t\t\t\"headers\": headers,\n\t\t\t\"filename\": filename,\n\t\t}\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, no_of_records, meta],\n\t\t\toutputs=gr.File(label=\"Download CSV\"),\n\t\t)\n\t\tdef generate_csv(*data):",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tmeta.value",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\tmeta.value = {\n\t\t\t\"headers\": headers,\n\t\t\t\"filename\": filename,\n\t\t}\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, no_of_records, meta],\n\t\t\toutputs=gr.File(label=\"Download CSV\"),\n\t\t)\n\t\tdef generate_csv(*data):\n\t\t\tmethod_name_list = data[:-2]",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tmethod_name_list",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\tmethod_name_list = data[:-2]\n\t\t\tno_of_records = data[-2]\n\t\t\tmeta = data[-1]\n\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tno_of_records",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\tno_of_records = data[-2]\n\t\t\tmeta = data[-1]\n\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tmeta",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\tmeta = data[-1]\n\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\theaders",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\theaders = meta.get(\"headers\")\n\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tfilename",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\tfilename = meta.get(\"filename\")\n\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\trecords",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\trecords = []\n\t\t\tfor _ in range(no_of_records):\n\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\trecord",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\t\trecord = {}\n\t\t\t\tfor index, method_name in enumerate(method_name_list):\n\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\tmethod",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\t\t\tmethod = method_name_method_dict.get(method_name, default_method_name)\n\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\t\trecord[headers[index]]",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\t\t\trecord[headers[index]] = method()\n\t\t\t\trecords.append(record)\n\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tdf",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\tdf = pd.DataFrame(records)\n\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tcsv_file",
+        "kind": 5,
+        "importPath": "csv_seeder.new1",
+        "description": "csv_seeder.new1",
+        "peekOfCode": "\t\t\tcsv_file = f\"{no_of_records} Records of {filename}\"\n\t\t\tdf.to_csv(csv_file, index=False)\n\t\t\treturn csv_file\ndemo.launch()",
+        "detail": "csv_seeder.new1",
+        "documentation": {}
+    },
+    {
+        "label": "is_callable_method",
+        "kind": 2,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "def is_callable_method(obj):\n\t\"\"\"Check if the attribute is a callable and has no required parameters.\"\"\"\n\tif not callable(obj):\n\t\treturn False\n\tif inspect.isclass(obj):\n\t\treturn False\n\t# if isinstance(obj, types.BuiltinMethodType | types.MethodWrapperType | types.MethodType):\n\tif isinstance(obj, types.BuiltinMethodType | types.MethodWrapperType):\n\t\treturn False\n\ttry:",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "auto_generate_mimesis_methods",
+        "kind": 2,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "def auto_generate_mimesis_methods(providers):\n\t\"\"\"Auto-generate a dictionary of callable Mimesis methods from given providers.\"\"\"\n\tmethods = {}\n\tfor provider in providers:\n\t\tfor attribute_name in dir(provider):\n\t\t\tattribute = getattr(provider, attribute_name)\n\t\t\tif (\n\t\t\t\tis_callable_method(attribute)\n\t\t\t\tand not attribute_name.startswith(\"_\")\n\t\t\t\tand attribute_name not in methods",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "get_data_generator",
+        "kind": 2,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "def get_data_generator(header):\n\tlower_header = snake_case(header)\n\tif lower_header in mimesis_attribute_list:\n\t\treturn mimesis_methods[lower_header]\n\t# for key, method in mimesis_methods.items():\n\t# \tif key in lower_header:\n\t# \t\treturn method\n\t# Default fallback\n\treturn text.word\ndef get_header_generator_dict(headers):",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "get_header_generator_dict",
+        "kind": 2,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "def get_header_generator_dict(headers):\n\tgenerator_dict = {}\n\tfor header in headers:\n\t\tgenerator_dict[header] = get_data_generator(header)\n\treturn generator_dict\ndef generate_records(headers, count, locale=\"en\"):\n\trecords = []\n\theader_generator_dict = get_header_generator_dict(headers)\n\tfor _ in range(count):\n\t\trecord = {}",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_records",
+        "kind": 2,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "def generate_records(headers, count, locale=\"en\"):\n\trecords = []\n\theader_generator_dict = get_header_generator_dict(headers)\n\tfor _ in range(count):\n\t\trecord = {}\n\t\tfor header in headers:\n\t\t\tgenerator = header_generator_dict[header]\n\t\t\trecord[header] = generator()\n\t\trecords.append(record)\n\treturn records",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "def main(file_path, record_count, locale=\"en\"):\n\ttry:\n\t\t# Read the CSV file and extract headers\n\t\tdf = pd.read_csv(file_path)\n\t\theaders = df.columns.tolist()\n\t\t# Generate records based on headers\n\t\trecords = generate_records(headers, record_count, locale)\n\t\tfor record in records:\n\t\t\tprint(record)\n\texcept Exception as e:",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "generic",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "generic = Generic()\n# person = Person()\n# address = Address()\n# text = Text()\n# List of Mimesis providers to introspect\n# providers = [generic, person, address, text]\n# providers = [generic]\nprovider_name_provider_dict = {\n\tprovider_name: provider for provider_name, provider in inspect.getmembers(generic)\n}",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "provider_name_provider_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "provider_name_provider_dict = {\n\tprovider_name: provider for provider_name, provider in inspect.getmembers(generic)\n}\n# provider=list(provider_name_provider_dict.values())[15]\nmethod_name_method_dict = {\n\tmethod_name: method\n\tfor method_name, method in inspect.getmembers(\n\t\tlist(provider_name_provider_dict.values())[15], predicate=inspect.ismethod\n\t)\n\tif not method_name.startswith(\"_\")",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "method_name_method_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "method_name_method_dict = {\n\tmethod_name: method\n\tfor method_name, method in inspect.getmembers(\n\t\tlist(provider_name_provider_dict.values())[15], predicate=inspect.ismethod\n\t)\n\tif not method_name.startswith(\"_\")\n}\nmethod = list(method_name_method_dict.values())[15]\nparameters_dict = inspect.signature(method).parameters\ndef is_callable_method(obj):",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "method",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "method = list(method_name_method_dict.values())[15]\nparameters_dict = inspect.signature(method).parameters\ndef is_callable_method(obj):\n\t\"\"\"Check if the attribute is a callable and has no required parameters.\"\"\"\n\tif not callable(obj):\n\t\treturn False\n\tif inspect.isclass(obj):\n\t\treturn False\n\t# if isinstance(obj, types.BuiltinMethodType | types.MethodWrapperType | types.MethodType):\n\tif isinstance(obj, types.BuiltinMethodType | types.MethodWrapperType):",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "parameters_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "parameters_dict = inspect.signature(method).parameters\ndef is_callable_method(obj):\n\t\"\"\"Check if the attribute is a callable and has no required parameters.\"\"\"\n\tif not callable(obj):\n\t\treturn False\n\tif inspect.isclass(obj):\n\t\treturn False\n\t# if isinstance(obj, types.BuiltinMethodType | types.MethodWrapperType | types.MethodType):\n\tif isinstance(obj, types.BuiltinMethodType | types.MethodWrapperType):\n\t\treturn False",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tsignature",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\tsignature = inspect.signature(obj)\n\t\tfor param in signature.parameters.values():\n\t\t\tif param.default == inspect.Parameter.empty:\n\t\t\t\treturn False\n\texcept ValueError as e:\n\t\tprint(e)\n\t\treturn False\n\treturn True\ndef auto_generate_mimesis_methods(providers):\n\t\"\"\"Auto-generate a dictionary of callable Mimesis methods from given providers.\"\"\"",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\tmethods",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\tmethods = {}\n\tfor provider in providers:\n\t\tfor attribute_name in dir(provider):\n\t\t\tattribute = getattr(provider, attribute_name)\n\t\t\tif (\n\t\t\t\tis_callable_method(attribute)\n\t\t\t\tand not attribute_name.startswith(\"_\")\n\t\t\t\tand attribute_name not in methods\n\t\t\t):\n\t\t\t\t# Use the attribute name directly as the key here; modify if needed",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tattribute",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\t\tattribute = getattr(provider, attribute_name)\n\t\t\tif (\n\t\t\t\tis_callable_method(attribute)\n\t\t\t\tand not attribute_name.startswith(\"_\")\n\t\t\t\tand attribute_name not in methods\n\t\t\t):\n\t\t\t\t# Use the attribute name directly as the key here; modify if needed\n\t\t\t\tmethods[attribute_name] = attribute\n\treturn methods\n# Dynamically generate mappings",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tmethods[attribute_name]",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\t\t\tmethods[attribute_name] = attribute\n\treturn methods\n# Dynamically generate mappings\nmimesis_methods = auto_generate_mimesis_methods(providers)\nmimesis_attribute_list = [key for key, _ in mimesis_methods.items()]\ndef get_data_generator(header):\n\tlower_header = snake_case(header)\n\tif lower_header in mimesis_attribute_list:\n\t\treturn mimesis_methods[lower_header]\n\t# for key, method in mimesis_methods.items():",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "mimesis_methods",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "mimesis_methods = auto_generate_mimesis_methods(providers)\nmimesis_attribute_list = [key for key, _ in mimesis_methods.items()]\ndef get_data_generator(header):\n\tlower_header = snake_case(header)\n\tif lower_header in mimesis_attribute_list:\n\t\treturn mimesis_methods[lower_header]\n\t# for key, method in mimesis_methods.items():\n\t# \tif key in lower_header:\n\t# \t\treturn method\n\t# Default fallback",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "mimesis_attribute_list",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "mimesis_attribute_list = [key for key, _ in mimesis_methods.items()]\ndef get_data_generator(header):\n\tlower_header = snake_case(header)\n\tif lower_header in mimesis_attribute_list:\n\t\treturn mimesis_methods[lower_header]\n\t# for key, method in mimesis_methods.items():\n\t# \tif key in lower_header:\n\t# \t\treturn method\n\t# Default fallback\n\treturn text.word",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\tlower_header",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\tlower_header = snake_case(header)\n\tif lower_header in mimesis_attribute_list:\n\t\treturn mimesis_methods[lower_header]\n\t# for key, method in mimesis_methods.items():\n\t# \tif key in lower_header:\n\t# \t\treturn method\n\t# Default fallback\n\treturn text.word\ndef get_header_generator_dict(headers):\n\tgenerator_dict = {}",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\tgenerator_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\tgenerator_dict = {}\n\tfor header in headers:\n\t\tgenerator_dict[header] = get_data_generator(header)\n\treturn generator_dict\ndef generate_records(headers, count, locale=\"en\"):\n\trecords = []\n\theader_generator_dict = get_header_generator_dict(headers)\n\tfor _ in range(count):\n\t\trecord = {}\n\t\tfor header in headers:",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tgenerator_dict[header]",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\tgenerator_dict[header] = get_data_generator(header)\n\treturn generator_dict\ndef generate_records(headers, count, locale=\"en\"):\n\trecords = []\n\theader_generator_dict = get_header_generator_dict(headers)\n\tfor _ in range(count):\n\t\trecord = {}\n\t\tfor header in headers:\n\t\t\tgenerator = header_generator_dict[header]\n\t\t\trecord[header] = generator()",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\trecords",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\trecords = []\n\theader_generator_dict = get_header_generator_dict(headers)\n\tfor _ in range(count):\n\t\trecord = {}\n\t\tfor header in headers:\n\t\t\tgenerator = header_generator_dict[header]\n\t\t\trecord[header] = generator()\n\t\trecords.append(record)\n\treturn records\ndef main(file_path, record_count, locale=\"en\"):",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\theader_generator_dict",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\theader_generator_dict = get_header_generator_dict(headers)\n\tfor _ in range(count):\n\t\trecord = {}\n\t\tfor header in headers:\n\t\t\tgenerator = header_generator_dict[header]\n\t\t\trecord[header] = generator()\n\t\trecords.append(record)\n\treturn records\ndef main(file_path, record_count, locale=\"en\"):\n\ttry:",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\trecord",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\trecord = {}\n\t\tfor header in headers:\n\t\t\tgenerator = header_generator_dict[header]\n\t\t\trecord[header] = generator()\n\t\trecords.append(record)\n\treturn records\ndef main(file_path, record_count, locale=\"en\"):\n\ttry:\n\t\t# Read the CSV file and extract headers\n\t\tdf = pd.read_csv(file_path)",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tgenerator",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\t\tgenerator = header_generator_dict[header]\n\t\t\trecord[header] = generator()\n\t\trecords.append(record)\n\treturn records\ndef main(file_path, record_count, locale=\"en\"):\n\ttry:\n\t\t# Read the CSV file and extract headers\n\t\tdf = pd.read_csv(file_path)\n\t\theaders = df.columns.tolist()\n\t\t# Generate records based on headers",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\trecord[header]",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\t\trecord[header] = generator()\n\t\trecords.append(record)\n\treturn records\ndef main(file_path, record_count, locale=\"en\"):\n\ttry:\n\t\t# Read the CSV file and extract headers\n\t\tdf = pd.read_csv(file_path)\n\t\theaders = df.columns.tolist()\n\t\t# Generate records based on headers\n\t\trecords = generate_records(headers, record_count, locale)",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdf",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\tdf = pd.read_csv(file_path)\n\t\theaders = df.columns.tolist()\n\t\t# Generate records based on headers\n\t\trecords = generate_records(headers, record_count, locale)\n\t\tfor record in records:\n\t\t\tprint(record)\n\texcept Exception as e:\n\t\tprint(f\"An error occurred: {e}\")\n# Usage example\nif __name__ == \"__main__\":",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\theaders",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\theaders = df.columns.tolist()\n\t\t# Generate records based on headers\n\t\trecords = generate_records(headers, record_count, locale)\n\t\tfor record in records:\n\t\t\tprint(record)\n\texcept Exception as e:\n\t\tprint(f\"An error occurred: {e}\")\n# Usage example\nif __name__ == \"__main__\":\n\tfile_path = \"downloads/CRM Lead.csv\"",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\t\trecords",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\t\trecords = generate_records(headers, record_count, locale)\n\t\tfor record in records:\n\t\t\tprint(record)\n\texcept Exception as e:\n\t\tprint(f\"An error occurred: {e}\")\n# Usage example\nif __name__ == \"__main__\":\n\tfile_path = \"downloads/CRM Lead.csv\"\n\trecord_count = 10\n\tlocale = \"en\"  # You can change this to another locale if needed",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\tfile_path",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\tfile_path = \"downloads/CRM Lead.csv\"\n\trecord_count = 10\n\tlocale = \"en\"  # You can change this to another locale if needed\n\tmain(file_path, record_count, locale)",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\trecord_count",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\trecord_count = 10\n\tlocale = \"en\"  # You can change this to another locale if needed\n\tmain(file_path, record_count, locale)",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    },
+    {
+        "label": "\tlocale",
+        "kind": 5,
+        "importPath": "csv_seeder.old_main",
+        "description": "csv_seeder.old_main",
+        "peekOfCode": "\tlocale = \"en\"  # You can change this to another locale if needed\n\tmain(file_path, record_count, locale)",
+        "detail": "csv_seeder.old_main",
+        "documentation": {}
+    }
+]
