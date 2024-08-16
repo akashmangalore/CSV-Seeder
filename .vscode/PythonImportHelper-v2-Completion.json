@@ -618,7 +618,7 @@
         "kind": 5,
         "importPath": "csv_seeder.main",
         "description": "csv_seeder.main",
-        "peekOfCode": "\t\tgenerate_records_btn = gr.Button(\"Generate Records\")\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, locale, no_of_records, meta],\n\t\t\toutputs=[gr.File(label=\"Download CSV\", visible=False)],\n\t\t)\n\t\tdef on_generate_records_btn_click(*args):\n\t\t\tcsv_path = generate_csv(*args)\n\t\t\treturn gr.File(value=csv_path, visible=True)\ndemo.launch(share=True)",
+        "peekOfCode": "\t\tgenerate_records_btn = gr.Button(\"Generate Records\")\n\t\t@generate_records_btn.click(\n\t\t\tinputs=[*dropdowns, locale, no_of_records, meta],\n\t\t\toutputs=[gr.File(label=\"Download CSV\", visible=False)],\n\t\t)\n\t\tdef on_generate_records_btn_click(*args):\n\t\t\tcsv_path = generate_csv(*args)\n\t\t\treturn gr.File(value=csv_path, visible=True)\ndemo.launch()",
         "detail": "csv_seeder.main",
         "documentation": {}
     },
@@ -627,7 +627,7 @@
         "kind": 5,
         "importPath": "csv_seeder.main",
         "description": "csv_seeder.main",
-        "peekOfCode": "\t\t\tcsv_path = generate_csv(*args)\n\t\t\treturn gr.File(value=csv_path, visible=True)\ndemo.launch(share=True)",
+        "peekOfCode": "\t\t\tcsv_path = generate_csv(*args)\n\t\t\treturn gr.File(value=csv_path, visible=True)\ndemo.launch()",
         "detail": "csv_seeder.main",
         "documentation": {}
     }

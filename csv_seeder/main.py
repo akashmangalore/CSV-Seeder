@@ -146,4 +146,4 @@ with gr.Blocks() as demo:
 			return gr.File(value=csv_path, visible=True)
 
 
-demo.launch(share=True)
+demo.launch()
