@@ -25,7 +25,13 @@ jobs:
         run: python -m pip install gradio
 
       - name: Log in to Hugging Face
-        run: python -c 'import huggingface_hub; huggingface_hub.login(token="${{ secrets.hf_token }}")'
+        run: |
+          python -c 'import huggingface_hub; huggingface_hub.login(token="${{ secrets.hf_token }}")'
+          echo "Logged into Hugging Face"
+
+      - name: Verify Login (Optional)
+        run: |
+          python -c 'import huggingface_hub; print(huggingface_hub.whoami())'
 
       - name: Deploy to Spaces
-        run: gradio deploy
+        run: gradio deploy --token ${{ secrets.hf_token }}
